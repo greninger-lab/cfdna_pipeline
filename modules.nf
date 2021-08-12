@@ -45,6 +45,7 @@ process align_samples {
         tuple val(base), val(reference), file("${base}_R1_37bp.fastq.gz"), file("${base}_R2_37bp.fastq.gz"), file("${base}_summary.csv")// from Trim_out_ch
         tuple file(GRCH37_1), file(GRCH37_2), file(GRCH37_3), file(GRCH37_4), file(GRCH37_5), file(GRCH37_6)
         tuple file(AC_000008_1), file(AC_000008_2), file(AC_000008_3), file(AC_000008_4), file(AC_000008_5), file(AC_000008_6)
+        tuple file(AC_000018_1), file(AC_000018_2), file(AC_000018_3), file(AC_000018_4), file(AC_000018_5), file(AC_000018_6)
         tuple file(AF157706_1), file(AF157706_2), file(AF157706_3), file(AF157706_4), file(AF157706_5), file(AF157706_6)
         tuple file(MF681662_1), file(MF681662_2), file(MF681662_3), file(MF681662_4), file(MF681662_5), file(MF681662_6)
         tuple file(NC_007605_1), file(NC_007605_2), file(NC_007605_3), file(NC_007605_4), file(NC_007605_5), file(NC_007605_6)

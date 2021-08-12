@@ -64,6 +64,13 @@ AC_000008_3 = file("s3://clomp-reference-data/tool_specific_data/cfdna_index/AC0
 AC_000008_4 = file("s3://clomp-reference-data/tool_specific_data/cfdna_index/AC000008_index.4.bt2")
 AC_000008_5 = file("s3://clomp-reference-data/tool_specific_data/cfdna_index/AC000008_index.rev.1.bt2")
 AC_000008_6 = file("s3://clomp-reference-data/tool_specific_data/cfdna_index/AC000008_index.rev.2.bt2")
+AC_000018 = file("s3://clomp-reference-data/tool_specific_data/cfdna_index/AC_000018.fasta")
+AC_000018_1 = file("s3://clomp-reference-data/tool_specific_data/cfdna_index/AC000018_index.1.bt2")
+AC_000018_2 = file("s3://clomp-reference-data/tool_specific_data/cfdna_index/AC000018_index.2.bt2")
+AC_000018_3 = file("s3://clomp-reference-data/tool_specific_data/cfdna_index/AC000018_index.3.bt2")
+AC_000018_4 = file("s3://clomp-reference-data/tool_specific_data/cfdna_index/AC000018_index.4.bt2")
+AC_000018_5 = file("s3://clomp-reference-data/tool_specific_data/cfdna_index/AC000018_index.rev.1.bt2")
+AC_000018_6 = file("s3://clomp-reference-data/tool_specific_data/cfdna_index/AC000018_index.rev.2.bt2")
 AF157706 = file("s3://clomp-reference-data/tool_specific_data/cfdna_index/AF157706.fasta")
 AF157706_1 = file("s3://clomp-reference-data/tool_specific_data/cfdna_index/AF157706_index.1.bt2")
 AF157706_2 = file("s3://clomp-reference-data/tool_specific_data/cfdna_index/AF157706_index.2.bt2")
@@ -168,6 +175,7 @@ workflow {
         trim_reads.out[0],
         tuple(GRCH37_1, GRCH37_2, GRCH37_3, GRCH37_4, GRCH37_5, GRCH37_6),
         tuple(AC_000008_1, AC_000008_2, AC_000008_3, AC_000008_4, AC_000008_5, AC_000008_6),
+        tuple(AC_000018_1, AC_000018_2, AC_000018_3, AC_000018_4, AC_000018_5, AC_000018_6),
         tuple(AF157706_1, AF157706_2, AF157706_3, AF157706_4, AF157706_5, AF157706_6),
         tuple(MF681662_1, MF681662_2, MF681662_3, MF681662_4, MF681662_5, MF681662_6),
         tuple(NC_007605_1, NC_007605_2, NC_007605_3, NC_007605_4, NC_007605_5, NC_007605_6),
