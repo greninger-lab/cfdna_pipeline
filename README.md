@@ -10,7 +10,7 @@ This pipeline takes gzipped paired-end fastq files and a metadata file specifyin
 2. Install [docker](https://docs.docker.com/get-docker/).
 
 ## Usage
-- Example command for fastqs in current directory: ```nextflow run greninger-lab/cfdna_pipeline --METADATA metadata.csv --OUTDIR output/ -resume -with-trace -with-docker ubuntu:18.04 -c ~/nextflow.config -profile cloud```
+- Example command for fastqs in current directory: ```nextflow run greninger-lab/cfdna_pipeline --METADATA metadata.csv --OUTDIR output/ -resume -with-trace -with-docker ubuntu:18.04 -c ~/nextflow.covid.config -profile cloud```
 
 
 | Command  | Description |
