@@ -1,5 +1,5 @@
 # cfDNA pipeline
-This pipeline is intended for processing of cfDNA samples for Quynh.
+This pipeline is intended for processing of cfDNA samples.
 
 This pipeline takes gzipped paired-end fastq files and a metadata file specifying references, then outputs bams and relevant information.
 
@@ -20,3 +20,6 @@ This pipeline takes gzipped paired-end fastq files and a metadata file specifyin
 | -resume  | nextflow will pick up where it left off if the previous command was interrupted for some reason.
 | -with-docker ubuntu:18.04 | Runs command with Ubuntu docker.
 | -with-trace | Outputs a trace.txt that shows which processes end up in which work/ folders. 
+
+# Jupyter notebook
+This notebook takes files with inserts size collecting from sequencing data and generate figures accordingly. Supporting files can be found here at main folder or at https://github.com/greninger-lab/cfdna_pipeline/releases/tag/v.1.0 (due to the large size). 
