@@ -20,7 +20,7 @@ process trim_reads {
     #!/bin/bash
 
     base=\$(echo ${R1} | cut -f1 -d'_')
-    fastp -w ${task.cpus} -i \$base*R1*.fastq.gz -I \$base*R2*.fastq.gz -o \$base'_R1_37bp.fastq.gz' -O \$base'_R2_37bp.fastq.gz' -b 37 -B 37 > fastp_out.txt 2>&1
+    fastp -w ${task.cpus} -i \$base*R1*.fastq.gz -I \$base*R2*.fastq.gz -o \$base'_R1_37bp.fastq.gz' -O \$base'_R2_37bp.fastq.gz' -b 37 -B 37 --detect_adapter_for_pe > fastp_out.txt 2>&1
 
     trimmed_reads=\$(grep "reads passed filter:" fastp_out.txt | cut -f2 -d":" | cut -f2 -d" ")
 
